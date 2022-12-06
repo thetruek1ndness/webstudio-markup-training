@@ -1,0 +1,157 @@
+.page-footer {
+  background: var(--secondary-section-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--bright-text-color);
+  }
+}
+
+.page-footer__wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer__logo-wrap {
+  margin-right: 70px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__geoposition {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--primary-text-size);
+  line-height: 1.71;
+  color: var(--bright-text-color);
+}
+
+.address__contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--primary-text-size);
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us {
+  margin-right: auto;
+
+  .socials__link {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .socials__icon {
+    fill: var(--bright-icon-color);
+  }
+}
+
+.join-us__heading {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: var(--primary-text-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--bright-text-color);
+}
+
+// без дублирования стилей не ховерит в футере, что-то перебивает
+.socials__link {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  transition: background-color var(--hft);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+}
+
+.socials__icon {
+  fill: var(--primary-icon-color);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--bright-text-color);
+  }
+}
+// конец
+
+.page-footer__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--bright-text-color);
+}
+
+.page-footer__input {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--bright-text-color);
+
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.page-footer__button {
+  cursor: pointer;
+
+  position: relative;
+  padding: 10px 62px 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--bright-text-color);
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+  }
+}

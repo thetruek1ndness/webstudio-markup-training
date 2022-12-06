@@ -1,0 +1,38 @@
+.activity {
+  padding-top: 0px;
+}
+
+.activity__list {
+  @extend%centered-flex;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.activity__item{
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.activity__thumb{
+  position: relative;
+}
+
+.activity__caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: var(--primary-text-size);
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--bright-text-color);
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+

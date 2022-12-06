@@ -1,0 +1,32 @@
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features__icon-bg {
+  @extend%centered-flex;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--secondary-card-bg-color);
+}
+
+.features__label {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: var(--primary-text-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__definition {
+  font-size: var(--primary-text-size);
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}

@@ -1,0 +1,35 @@
+:root {
+  /* ---background colors--- */
+  --primary-section-bg-color: #ffffff;
+  --secondary-section-bg-color: #2f303a;
+  --third-section-bg-color: #f5f4fa;
+  --primary-card-bg-color: #ffffff;
+  --secondary-card-bg-color: #f5f4fa;
+  --primary-btn-bg-color: #f5f4fa;
+  --secondary-btn-bg-color: #2196f3;
+  --third-btn-bg-color: #ffffff;
+  --accent-color: #2196f3;
+  /* ---text-colors--- */
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --bright-text-color: #ffffff;
+  --dark-text-color: #000000;
+  --primary-btn-text-color: #f5f4fa;
+  --secondary-btn-text-color: #212121;
+  /* icon-colors */
+  --primary-icon-color: #afb1b8;
+  --secondary-icon-color: #757575;
+  --bright-icon-color: #ffffff;
+  /* ---borders--- */
+  --primary-border-color: #eeeeee;
+  --secondary-border-color: #ececec;
+  --third-border-color: #afb1b8;
+  /* ---fonts--- */
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+  /* ---text-size--- */
+  --primary-text-size: 14px;
+  --secondary-text-size: 16px;
+  /* ---transition--- */
+  --hft: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
