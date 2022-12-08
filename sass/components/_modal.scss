@@ -58,8 +58,8 @@
 .modal__close-icon{
   fill: #000000;
 
-  .modal-close:hover &,
-  .modal-close:focus &{
+  .modal__close-button:hover &,
+  .modal__close-button:focus &{
     fill: var(--accent-color);
   }
 }

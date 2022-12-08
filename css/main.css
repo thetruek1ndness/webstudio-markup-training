@@ -365,7 +365,7 @@ img {
 .modal__close-icon {
   fill: #000000;
 }
-.modal-close:hover .modal__close-icon, .modal-close:focus .modal__close-icon {
+.modal__close-button:hover .modal__close-icon, .modal__close-button:focus .modal__close-icon {
   fill: var(--accent-color);
 }
 
