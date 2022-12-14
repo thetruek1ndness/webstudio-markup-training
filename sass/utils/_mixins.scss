@@ -1,0 +1,58 @@
+@mixin mobile {
+  @media screen and (min-width: 480px){
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media screen and (min-width: 1200px){
+    @content;
+  }
+}
+
+@mixin retina{
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    @content;
+  }
+}
+
+@mixin font ($fw, $fs, $lh, $ls){
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin transition ($prop){
+  transition: $prop 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin centeredBlock{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin standartBackgroundImage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

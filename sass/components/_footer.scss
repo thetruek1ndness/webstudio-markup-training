@@ -2,22 +2,57 @@
   background: var(--secondary-section-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 
-  .logo {
-    display: inline-block;
-    margin-bottom: 20px;
-
-    color: var(--bright-text-color);
+  @include desktop{
+    text-align: left;
   }
 }
 
 .page-footer__wrap {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 60px;
+
+  @include tablet-only{
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: baseline;
+  }
+}
+
+.page-footer__tablet-head{
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @include desktop{
+    justify-content: flex-start;
+    gap: 70px;
+    margin-right: auto;
+  }
 }
 
 .page-footer__logo-wrap {
-  margin-right: 70px;
+  @media screen and (max-width: 767px){
+    margin-bottom: 60px;
+  }
+}
+
+.page-footer__logo {
+  display: inline-block;
+
+  margin-right: 0px;
+  margin-bottom: 20px;
+
+  color: var(--bright-text-color);
 }
 
 .address__item:not(:last-child) {
@@ -42,8 +77,6 @@
 }
 
 .join-us {
-  margin-right: auto;
-
   .socials__link {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -73,7 +106,7 @@
 
   border-radius: 50%;
 
-  transition: background-color var(--hft);
+  @include transition(background-color);
 
   &:hover,
   &:focus {
@@ -104,9 +137,9 @@
 }
 
 .page-footer__input {
-  width: 358px;
+  width: 100%;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 20px;
@@ -117,13 +150,25 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @include mobile{
+    width: 450px;
+  }
+
+  @include desktop{
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
 }
 
 .page-footer__button {
   cursor: pointer;
 
   position: relative;
+  display: block;
   padding: 10px 62px 10px 28px;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 16px;
@@ -153,5 +198,10 @@
     width: 24px;
     height: 24px;
     background-image: url(../images/icon-send.svg);
+  }
+
+  @include desktop{
+    display: inline-block;
+    margin: 0;
   }
 }

@@ -1,5 +1,16 @@
 .activity {
   padding-top: 0px;
+  display: none;
+
+  @include mobile{
+  }
+
+  @include tablet {
+  }
+
+  @include desktop{
+    display: block;
+  }
 }
 
 .activity__list {

@@ -1,7 +1,16 @@
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--secondary-border-color);
+
+  @include tablet{
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @include desktop{
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .page-header__wrap {
@@ -10,11 +19,11 @@
 }
 
 .logo {
-  margin-right: 93px;
+  margin-right: auto;
 
   font-family: var(--secondary-font-family);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   color: var(--dark-text-color);
   text-decoration: none;
@@ -24,10 +33,18 @@
     color: var(--accent-color);
   }
   
+  @include desktop{
+    font-size: 26px;
+    margin-right: 93px;
+  }
 }
 
 .page-nav {
   margin-right: auto;
+  display: none;
+  @include tablet{
+    display: block;
+  }
 }
 
 .page-nav__list {
@@ -69,11 +86,23 @@
 }
 
 .page-header__contact-list {
-  display: flex;
+  display: none;
+
+  @include tablet{
+    display: block;
+  }
+  @include desktop{
+    display: flex;
+  }
 }
 
 .page-header__contact-item:not(:last-child) {
-  margin-right: 50px;
+  @include tablet-only{
+    margin-bottom: 10px;
+  }
+  @include desktop{
+    margin-right: 50px;
+  }
 }
 
 .page-header__contact-link {
@@ -91,11 +120,33 @@
 
 .page-header__contact-icon {
   fill: var(--secondary-icon-color);
-  transition: fill var(--hft);
+  @include transition(fill);
 
   .link:hover &,
   .link:focus &{
     fill: var(--accent-color);
   }
 }
+
+.page-header__mobile-menu-open{
+  color: #000000;
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  
+  @include tablet{
+    display: none;
+  }
+}
+
+.mobile-menu-open{
+  fill: currentColor;
+
+  .page-header__mobile-menu-open:hover &,
+  .page-header__mobile-menu-open:focus &{
+    fill: var(--accent-color);
+  }
+}
+
 

@@ -1,11 +1,20 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
+
+  @include tablet{
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @include desktop{
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {

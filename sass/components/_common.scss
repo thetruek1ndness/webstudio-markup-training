@@ -1,22 +1,46 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
+
+  @include desktop {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }
 
 .link {
@@ -44,7 +68,7 @@
 }
 
 .socials {
-  display: flex;
+  @extend %centered-flex;
   gap: 10px;
 }
 
