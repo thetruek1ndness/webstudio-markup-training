@@ -17,42 +17,61 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body data-body>
     <header class="page-header">
       <div class="page-header__wrap container">
-        <a class="logo" href="./index.html" lang="en"><span class="logo__part">Web</span>Studio</a>
+        <a class="logo" href="./index.html" lang="en"
+          ><span class="logo__part">Web</span>Studio</a
+        >
         <nav class="page-nav">
           <ul class="page-nav__list">
             <li class="page-nav__item">
-              <a class="page-nav__link--current link" href="./index.html">Студія</a>
+              <a class="page-nav__link--current link" href="./index.html"
+                >Студія</a
+              >
             </li>
-            <li class="page-nav__item"><a class="page-nav__link link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="page-nav__item"><a class="page-nav__link link" href="#">Контакти</a></li>
+            <li class="page-nav__item">
+              <a class="page-nav__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link link" href="./contacts.html">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="page-header__contact-list">
           <li class="page-header__contact-item">
-            <a class="page-header__contact-link link" href="mailto:info@devstudio.com" lang="en"
-              >
+            <a
+              class="page-header__contact-link link"
+              href="mailto:info@devstudio.com"
+              lang="en"
+            >
               <svg class="page-header__contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>info@devstudio.com</a
+                <use href="./images/icons.svg#envelope"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="page-header__contact-item">
             <a class="page-header__contact-link link" href="tel:+380961111111">
-                <svg class="page-header__contact-icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
+              <svg class="page-header__contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
 
-        <button class="page-header__mobile-menu-open" type="button" data-menu-open>
+        <button
+          class="page-header__mobile-menu-open"
+          type="button"
+          data-menu-open
+        >
           <svg class="mobile-menu-open" width="40" height="40">
             <use href="./images/icons.svg#mob-menu"></use>
           </svg>
@@ -60,39 +79,85 @@
 
         <div class="mobile-menu" data-menu>
           <div class="mobile-menu__container">
-
             <div class="mobile-menu__head">
               <button class="mobile-menu__close" data-menu-close>
                 <svg class="mobile-menu__close-icon" width="40" height="40">
                   <use href="./images/icons.svg#mob-menu-close"></use>
                 </svg>
               </button>
-              
+
               <ul class="mobile-menu__nav">
-                <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link mobile-menu__link--active link">Студія</a></li>
-                <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a></li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="./index.html"
+                    class="mobile-menu__link mobile-menu__link--active link"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="./portfolio.html" class="mobile-menu__link link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">Контакти</a>
+                </li>
               </ul>
-            </div >
-    
+            </div>
+
             <div class="mobile-menu__foot">
               <ul class="mobile-menu__contacts">
                 <li class="mobile-menu__contact">
-                  <a href="tel:+380961111111" class="mobile-menu__phone link">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" class="mobile-menu__phone link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
                 <li class="mobile-menu__contact">
-                  <a href="mailto:info@devstudio.com" class="mobile-menu__mail link" lang="en">info@devstudio.com</a>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-menu__mail link"
+                    lang="en"
+                    >info@devstudio.com</a
+                  >
                 </li>
               </ul>
-      
+
               <ul class="mobile-menu__socials">
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">Instagram</a></li>
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">Twitter</a></li>
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">Facebook</a></li>
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">LinkedIn</a></li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >LinkedIn</a
+                  >
+                </li>
               </ul>
-            </div >
-          </div >
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -101,12 +166,18 @@
       <section class="hero">
         <div class="hero__wrap container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero__btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
 
           <!-- ------- MODAL ---------- -->
           <div class="modal-overlay is-hidden" data-modal>
             <div class="modal">
-              <button class="modal__close-button" type="button" data-modal-close>
+              <button
+                class="modal__close-button"
+                type="button"
+                data-modal-close
+              >
                 <svg class="modal__close-icon" width="18" height="18">
                   <use href="./images/icons.svg#close"></use>
                 </svg>
@@ -114,10 +185,15 @@
               <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
               <form class="modal__form" autocomplete="on">
-
                 <label for="user-name" class="modal__label">Ім'я</label>
                 <div class="modal__field">
-                  <input type="text" class="modal__input" name="user-name" id="user-name" required>
+                  <input
+                    type="text"
+                    class="modal__input"
+                    name="user-name"
+                    id="user-name"
+                    required
+                  />
                   <svg class="modal__icon" width="18" height="18">
                     <use href="./images/icons.svg#person"></use>
                   </svg>
@@ -125,7 +201,13 @@
 
                 <label for="user-phone" class="modal__label">Телефон</label>
                 <div class="modal__field">
-                  <input type="phone" class="modal__input" name="user-phone" id="user-phone" required>
+                  <input
+                    type="phone"
+                    class="modal__input"
+                    name="user-phone"
+                    id="user-phone"
+                    required
+                  />
                   <svg class="modal__icon" width="18" height="18">
                     <use href="./images/icons.svg#phone"></use>
                   </svg>
@@ -133,24 +215,50 @@
 
                 <label for="user-mail" class="modal__label">Пошта</label>
                 <div class="modal__field">
-                  <input type="email" class="modal__input" name="user-mail" id="user-mail" required>
+                  <input
+                    type="email"
+                    class="modal__input"
+                    name="user-mail"
+                    id="user-mail"
+                    required
+                  />
                   <svg class="modal__icon" width="18" height="18">
                     <use href="./images/icons.svg#email"></use>
                   </svg>
                 </div>
 
                 <label for="comment" class="modal__label">Коментар</label>
-                <textarea class="modal__comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+                <textarea
+                  class="modal__comment"
+                  name="comment"
+                  id="comment"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
 
                 <label class="modal__policy">
-                  <input class="modal__checkbox" type="checkbox" name="check" required>
+                  <input
+                    class="modal__checkbox"
+                    type="checkbox"
+                    name="check"
+                    required
+                  />
                   <span class="modal__checkbox--custom"></span>
-                  <span class="modal__policy-label">Погоджуюся з розсилкою та приймаю <a class="modal__policy-link" href="" target="_blank" rel="noopener norefferer nofollow">Умови договору</a></span>
+                  <span class="modal__policy-label"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a
+                      class="modal__policy-link"
+                      href=""
+                      target="_blank"
+                      rel="noopener norefferer nofollow"
+                      >Умови договору</a
+                    ></span
+                  >
                 </label>
-                  
 
-                <button class="modal__send-button" type="submit">Відправити</button>
-
+                <button class="modal__send-button" type="submit">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
@@ -163,7 +271,11 @@
         <div class="features__wrap container">
           <h2 class="features__title visually-hidden">Особливості</h2>
           <ul class="features__list">
-            <li class="features__item">
+            <li
+              class="features__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+            >
               <div class="features__icon-bg">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
@@ -171,10 +283,16 @@
               </div>
               <h3 class="features__label">Увага до деталей</h3>
               <p class="features__definition">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
-            <li class="features__item">
+            <li
+              class="features__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="100"
+            >
               <div class="features__icon-bg">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
@@ -182,10 +300,16 @@
               </div>
               <h3 class="features__label">Пунктуальність</h3>
               <p class="features__definition">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
-            <li class="features__item">
+            <li
+              class="features__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
               <div class="features__icon-bg">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
@@ -196,7 +320,12 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="features__item">
+            <li
+              class="features__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
               <div class="features__icon-bg">
                 <svg class="features__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -204,7 +333,8 @@
               </div>
               <h3 class="features__label">Сучасні технології</h3>
               <p class="features__definition">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -214,23 +344,45 @@
       <!-------- ACTIVITY ----------->
       <section class="activity section">
         <div class="activity__wrap container">
-          <h2 class="activity__title section__title">Чим ми займаємося</h2>
+          <h2
+            class="activity__title section__title"
+            data-aos="fade-right"
+            data-aos-duration="400"
+            data-aos-delay="100"
+          >
+            Чим ми займаємося
+          </h2>
           <ul class="activity__list">
-            <li class="activity__item">
+            <li
+              class="activity__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+            >
               <div class="activity__thumb">
                 <img
-                  srcset="./images/activity/activity-1.jpg 1x, ./images/activity/activity-1@2.jpeg 2x"
+                  srcset="
+                    ./images/activity/activity-1.jpg    1x,
+                    ./images/activity/activity-1@2.jpeg 2x
+                  "
                   src="./images/activity/activity-1.jpg"
                   alt="кодинг з використанням планшету"
                   width="370"
-                  />
+                />
                 <h3 class="activity__caption">Десктопні додатки</h3>
               </div>
             </li>
-            <li class="activity__item">
+            <li
+              class="activity__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
               <div class="activity__thumb">
-                <img 
-                  srcset="./images/activity/activity-2.jpg 1x, ./images/activity/activity-2@2.jpeg 2x"
+                <img
+                  srcset="
+                    ./images/activity/activity-2.jpg    1x,
+                    ./images/activity/activity-2@2.jpeg 2x
+                  "
                   src="./images/activity/activity-2.jpg"
                   alt="мобільна розробка"
                   width="370"
@@ -238,10 +390,18 @@
                 <h3 class="activity__caption">Мобільні додатки</h3>
               </div>
             </li>
-            <li class="activity__item">
+            <li
+              class="activity__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
               <div class="activity__thumb">
                 <img
-                srcset="./images/activity/activity-3.jpg 1x, ./images/activity/activity-3@2.jpeg 2x"
+                  srcset="
+                    ./images/activity/activity-3.jpg    1x,
+                    ./images/activity/activity-3@2.jpeg 2x
+                  "
                   src="./images/activity/activity-3.jpg"
                   alt="палітра кольорів на планшеті"
                   width="370"
@@ -257,46 +417,93 @@
 
       <section class="team section">
         <div class="team__wrap container">
-          <h2 class="team__title section__title">Наша команда</h2>
+          <h2
+            class="team__title section__title"
+            data-aos="fade-left"
+            data-aos-duration="400"
+            data-aos-delay="100"
+          >
+            Наша команда
+          </h2>
           <ul class="team__list">
-            <li class="team__member">
+            <li
+              class="team__member"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="100"
+            >
               <picture>
-                <source srcset="./images/team/team-1-mob.jpeg 1x, ./images/team/team-1-mob@2.jpeg 2x" media="(max-width:767px)">
-                <source srcset="./images/team/team-1-tab.jpeg 1x, ./images/team/team-1-tab@2.jpeg 2x" media="(min-width:768px)">
-                <source srcset="./images/team/team-1.jpeg 1x, ./images/team/team-1@2.jpeg 2x" media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team/team-1-mob.jpeg   1x,
+                    ./images/team/team-1-mob@2.jpeg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-1-tab.jpeg   1x,
+                    ./images/team/team-1-tab@2.jpeg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-1.jpeg   1x,
+                    ./images/team/team-1@2.jpeg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
                 <img
                   src="./images/team/team-1-mob.jpeg"
                   alt="бородатий чоловік в окулярах посміхається"
-                  
                 />
               </picture>
               <div class="team__member-wrap">
                 <h3 class="team__member-name">Ігор Дем'яненко</h3>
-                <p class="team__member-specialization" lang="en">Product Designer</p>
+                <p class="team__member-specialization" lang="en">
+                  Product Designer
+                </p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -306,44 +513,84 @@
               </div>
             </li>
 
-            <li class="team__member">
+            <li
+              class="team__member"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
               <picture>
-                <source srcset="./images/team/team-2-mob.jpeg 1x, ./images/team/team-2-mob@2.jpeg 2x" media="(max-width:767px)">
-                <source srcset="./images/team/team-2-tab.jpeg 1x, ./images/team/team-2-tab@2.jpeg 2x" media="(min-width:768px)">
-                <source srcset="./images/team/team-2.jpeg 1x, ./images/team/team-2@2.jpeg 2x" media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team/team-2-mob.jpeg   1x,
+                    ./images/team/team-2-mob@2.jpeg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-tab.jpeg   1x,
+                    ./images/team/team-2-tab@2.jpeg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2.jpeg   1x,
+                    ./images/team/team-2@2.jpeg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
                 <img
                   src="./images/team/team-2-mob.jpeg"
                   alt="білявка в окулярах посміхається"
-                  
                 />
               </picture>
               <div class="team__member-wrap">
                 <h3 class="team__member-name">Ольга Рєпіна</h3>
-                <p class="team__member-specialization" lang="en">Frontend Developer</p>
+                <p class="team__member-specialization" lang="en">
+                  Frontend Developer
+                </p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -353,15 +600,37 @@
               </div>
             </li>
 
-            <li class="team__member">
+            <li
+              class="team__member"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
               <picture>
-                <source srcset="./images/team/team-3-mob.jpeg 1x, ./images/team/team-3-mob@2.jpeg 2x" media="(max-width:767px)">
-                <source srcset="./images/team/team-3-tab.jpeg 1x, ./images/team/team-3-tab@2.jpeg 2x" media="(min-width:768px)">
-                <source srcset="./images/team/team-3.jpeg 1x, ./images/team/team-3@2.jpeg 2x" media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team/team-3-mob.jpeg   1x,
+                    ./images/team/team-3-mob@2.jpeg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-tab.jpeg   1x,
+                    ./images/team/team-3-tab@2.jpeg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3.jpeg   1x,
+                    ./images/team/team-3@2.jpeg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
                 <img
                   src="./images/team/team-3-mob.jpeg"
                   alt="бородатий чоловік посміхається"
-                  
                 />
               </picture>
               <div class="team__member-wrap">
@@ -369,28 +638,44 @@
                 <p class="team__member-specialization" lang="en">Marketing</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -398,18 +683,39 @@
                   </li>
                 </ul>
               </div>
-              
             </li>
-            
-            <li class="team__member">
+
+            <li
+              class="team__member"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="400"
+            >
               <picture>
-                <source srcset="./images/team/team-4-mob.jpeg 1x, ./images/team/team-4-mob@2.jpeg 2x" media="(max-width:767px)">
-                <source srcset="./images/team/team-4-tab.jpeg 1x, ./images/team/team-4-tab@2.jpeg 2x" media="(min-width:768px)">
-                <source srcset="./images/team/team-4.jpeg 1x, ./images/team/team-4@2.jpeg 2x" media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team/team-4-mob.jpeg   1x,
+                    ./images/team/team-4-mob@2.jpeg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-4-tab.jpeg   1x,
+                    ./images/team/team-4-tab@2.jpeg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-4.jpeg   1x,
+                    ./images/team/team-4@2.jpeg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
                 <img
                   src="./images/team/team-4-mob.jpeg"
                   alt="бородатий чоловік в окулярах посміхається"
-                  
                 />
               </picture>
               <div class="team__member-wrap">
@@ -417,28 +723,44 @@
                 <p class="team__member-specialization" lang="en">UI Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a href="" class="socials__link" rel="noreffer nofollow noopener">
+                    <a
+                      href=""
+                      class="socials__link"
+                      rel="noreffer nofollow noopener"
+                    >
                       <svg class="socials__icon" width="20" height="20">
                         <use href="./images/icons.svg#linkedin"></use>
                       </svg>
@@ -454,45 +776,112 @@
 
       <section class="clients section">
         <div class="clients__wrap container">
-          <h2 class="cliets__title section__title">Постійні клієнти</h2>
+          <h2
+            class="cliets__title section__title"
+            data-aos="fade-right"
+            data-aos-duration="400"
+            data-aos-delay="100"
+          >
+            Постійні клієнти
+          </h2>
           <ul class="clients__list">
-            <li class="clients__item">
-              <a href="" class="clients__link" target="_blank" rel="noreffer nofollow noopener">
+            <li
+              class="clients__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="50"
+            >
+              <a
+                href=""
+                class="clients__link"
+                target="_blank"
+                rel="noreffer nofollow noopener"
+              >
                 <svg class="clients__icon" width="41" height="47">
                   <use href="./images/icons.svg#group-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
-              <a href="" class="clients__link" target="_blank" rel="noreffer nofollow noopener">
+            <li
+              class="clients__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="100"
+            >
+              <a
+                href=""
+                class="clients__link"
+                target="_blank"
+                rel="noreffer nofollow noopener"
+              >
                 <svg class="clients__icon" width="40" height="52">
                   <use href="./images/icons.svg#group-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
-              <a href="" class="clients__link" target="_blank" rel="noreffer nofollow noopener">
+            <li
+              class="clients__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="150"
+            >
+              <a
+                href=""
+                class="clients__link"
+                target="_blank"
+                rel="noreffer nofollow noopener"
+              >
                 <svg class="clients__icon" width="43" height="41">
                   <use href="./images/icons.svg#group-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
-              <a href="" class="clients__link" target="_blank" rel="noreffer nofollow noopener">
+            <li
+              class="clients__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
+              <a
+                href=""
+                class="clients__link"
+                target="_blank"
+                rel="noreffer nofollow noopener"
+              >
                 <svg class="clients__icon" width="84" height="41">
                   <use href="./images/icons.svg#group-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
-              <a href="" class="clients__link" target="_blank" rel="noreffer nofollow noopener">
+            <li
+              class="clients__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="250"
+            >
+              <a
+                href=""
+                class="clients__link"
+                target="_blank"
+                rel="noreffer nofollow noopener"
+              >
                 <svg class="clients__icon" width="63" height="45">
                   <use href="./images/icons.svg#group-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
-              <a href="" class="clients__link" target="_blank" rel="noreffer nofollow noopener">
+            <li
+              class="clients__item"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
+              <a
+                href=""
+                class="clients__link"
+                target="_blank"
+                rel="noreffer nofollow noopener"
+              >
                 <svg class="clients__icon" width="94" height="44">
                   <use href="./images/icons.svg#group-6"></use>
                 </svg>
@@ -506,9 +895,7 @@
     <!-------- FOOTER ----------->
     <footer class="page-footer">
       <div class="page-footer__wrap container">
-
         <div class="page-footer__tablet-head">
-
           <div class="page-footer__logo-wrap">
             <a class="page-footer__logo logo" href="./index.html" lang="en"
               ><span class="logo__part">Web</span>Studio</a
@@ -525,12 +912,16 @@
                   >
                 </li>
                 <li class="address__item">
-                  <a class="address__contact link" href="mailto:info@devstudio.com"
+                  <a
+                    class="address__contact link"
+                    href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li class="address__item">
-                  <a class="address__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="address__contact link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -540,28 +931,44 @@
             <b class="join-us__heading">Приєднуйтесь</b>
             <ul class="socials">
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noreffer nofollow noopener">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noreffer nofollow noopener"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noreffer nofollow noopener">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noreffer nofollow noopener"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noreffer nofollow noopener">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noreffer nofollow noopener"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noreffer nofollow noopener">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noreffer nofollow noopener"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
@@ -573,7 +980,9 @@
 
         <div class="page-footer__form-wrap">
           <form class="page-footer__form">
-            <label class="page-footer__label" for="email">Підпишіться на розсилку</label>
+            <label class="page-footer__label" for="email"
+              >Підпишіться на розсилку</label
+            >
             <input
               class="page-footer__input"
               type="email"
@@ -581,7 +990,9 @@
               id="email"
               placeholder="E-mail"
             />
-            <button class="page-footer__button" type="submit">Підписатися</button>
+            <button class="page-footer__button" type="submit">
+              Підписатися
+            </button>
           </form>
         </div>
       </div>
@@ -590,5 +1001,9 @@
     <!-------- SCRIPT ----------->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

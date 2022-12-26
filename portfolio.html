@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -40,7 +41,7 @@
               >
             </li>
             <li class="page-nav__item">
-              <a class="page-nav__link link" href="#">Контакти</a>
+              <a class="page-nav__link link" href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -171,27 +172,52 @@
           <!----------- PORTFOLIO - FILTER ----------->
           <div class="filter-wrap">
             <ul class="filter">
-              <li class="filter__item">
+              <li
+                class="filter__item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay="100"
+              >
                 <button class="filter__button--active button" type="button">
                   Усі
                 </button>
               </li>
-              <li class="filter__item">
+              <li
+                class="filter__item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay="150"
+              >
                 <button class="filter__button button" type="button">
                   Веб-сайти
                 </button>
               </li>
-              <li class="filter__item">
+              <li
+                class="filter__item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay="200"
+              >
                 <button class="filter__button button" type="button">
                   Додатки
                 </button>
               </li>
-              <li class="filter__item">
+              <li
+                class="filter__item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay="250"
+              >
                 <button class="filter__button button" type="button">
                   Дизайн
                 </button>
               </li>
-              <li class="filter__item">
+              <li
+                class="filter__item"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay="300"
+              >
                 <button class="filter__button button" type="button">
                   Маркетинг
                 </button>
@@ -201,7 +227,12 @@
 
           <!----------- PORTFOLIO - WORKS ----------->
           <ul class="cards">
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="100"
+            >
               <a class="card__link card-link--stretched">
                 <div class="card__header">
                   <picture>
@@ -248,7 +279,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="150"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -295,7 +331,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -342,7 +383,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="200"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -389,7 +435,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="250"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -436,7 +487,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -483,7 +539,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="300"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -530,7 +591,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="350"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -577,7 +643,12 @@
               </a>
             </li>
 
-            <li class="card">
+            <li
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="400"
+              data-aos-delay="400"
+            >
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -736,5 +807,9 @@
 
     <!-------- SCRIPT ----------->
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
