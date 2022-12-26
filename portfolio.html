@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title lang="en">Portfolio</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-      />
-      <link
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-      />
-      <link rel="stylesheet" href="./css/main.min.css" />
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body data-body>
-
-  <!----------- HEADER ----------->
-  <header class="page-header">
+    <!----------- HEADER ----------->
+    <header class="page-header">
       <div class="page-header__wrap container">
-
-        <a class="logo" href="./index.html" lang="en"><span class="logo__part">Web</span>Studio</a>
+        <a class="logo" href="./index.html" lang="en"
+          ><span class="logo__part">Web</span>Studio</a
+        >
 
         <nav class="page-nav">
-          <ul class="page-nav__list ">
-            <li class="page-nav__item"><a class="page-nav__link link" href="./index.html">Студія</a></li>
+          <ul class="page-nav__list">
             <li class="page-nav__item">
-              <a class="page-nav__link--current link" href="./portfolio.html">Портфоліо</a>
+              <a class="page-nav__link link" href="./index.html">Студія</a>
             </li>
-            <li class="page-nav__item"><a class="page-nav__link link" href="#">Контакти</a></li>
+            <li class="page-nav__item">
+              <a class="page-nav__link--current link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="page-nav__item">
+              <a class="page-nav__link link" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="page-header__contact-list">
           <li class="page-header__contact-item">
-            <a class="page-header__contact-link link" href="mailto:info@devstudio.com" lang="en">
+            <a
+              class="page-header__contact-link link"
+              href="mailto:info@devstudio.com"
+              lang="en"
+            >
               <svg class="page-header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com</a
@@ -57,55 +67,102 @@
           </li>
         </ul>
 
-        <button class="page-header__mobile-menu-open" type="button" data-menu-open>
+        <button
+          class="page-header__mobile-menu-open"
+          type="button"
+          data-menu-open
+        >
           <svg class="mobile-menu-open" width="40" height="40">
             <use href="./images/icons.svg#mob-menu"></use>
           </svg>
         </button>
 
-        <div class="mobile-menu is-hidden" data-menu>
+        <div class="mobile-menu" data-menu>
           <div class="mobile-menu__container">
-
             <div class="mobile-menu__head">
               <button class="mobile-menu__close" data-menu-close>
                 <svg class="mobile-menu__close-icon" width="40" height="40">
                   <use href="./images/icons.svg#mob-menu-close"></use>
                 </svg>
               </button>
-              
+
               <ul class="mobile-menu__nav">
-                <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Студія</a></li>
-                <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active link">Портфоліо</a></li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
+                <li class="mobile-menu__item">
+                  <a href="./index.html" class="mobile-menu__link link"
+                    >Студія</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="./portfolio.html"
+                    class="mobile-menu__link mobile-menu__link--active link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">Контакти</a>
+                </li>
               </ul>
-            </div >
-    
+            </div>
+
             <div class="mobile-menu__foot">
               <ul class="mobile-menu__contacts">
                 <li class="mobile-menu__contact">
-                  <a href="tel:+380961111111" class="mobile-menu__phone link">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" class="mobile-menu__phone link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
                 <li class="mobile-menu__contact">
-                  <a href="mailto:info@devstudio.com" class="mobile-menu__mail link" lang="en">info@devstudio.com</a>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-menu__mail link"
+                    lang="en"
+                    >info@devstudio.com</a
+                  >
                 </li>
               </ul>
-      
-              <ul class="mobile-menu__socials">
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">Instagram</a></li>
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">Twitter</a></li>
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">Facebook</a></li>
-                <li class="mobile-menu__social"><a href="" class="mobile-menu__soc-link link" rel="noreffer nofollow noopener">LinkedIn</a></li>
-              </ul>
-            </div >
-          </div >
-        </div>
 
-        
+              <ul class="mobile-menu__socials">
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mobile-menu__social">
+                  <a
+                    href=""
+                    class="mobile-menu__soc-link link"
+                    rel="noreffer nofollow noopener"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-
       <!----------- PORTFOLIO ----------->
       <section class="portfolio section">
         <div class="portfolio__wrap container">
@@ -114,31 +171,74 @@
           <!----------- PORTFOLIO - FILTER ----------->
           <div class="filter-wrap">
             <ul class="filter">
-              <li class="filter__item"><button class="filter__button--active button" type="button">Усі</button></li>
-              <li class="filter__item"><button class="filter__button button" type="button">Веб-сайти</button></li>
-              <li class="filter__item"><button class="filter__button button" type="button">Додатки</button></li>
-              <li class="filter__item"><button class="filter__button button" type="button">Дизайн</button></li>
-              <li class="filter__item"><button class="filter__button button" type="button">Маркетинг</button></li>
+              <li class="filter__item">
+                <button class="filter__button--active button" type="button">
+                  Усі
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button button" type="button">
+                  Веб-сайти
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button button" type="button">
+                  Додатки
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button button" type="button">
+                  Дизайн
+                </button>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button button" type="button">
+                  Маркетинг
+                </button>
+              </li>
             </ul>
-          </div >
+          </div>
 
           <!----------- PORTFOLIO - WORKS ----------->
           <ul class="cards">
-
             <li class="card">
               <a class="card__link card-link--stretched">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-1.jpeg 1x, ./images/portfolio/portfolio-mob-1@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-1.jpeg 1x, ./images/portfolio/portfolio-tab-1@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-1.jpeg 1x, ./images/portfolio/portfolio-1@2.jpeg 2x">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-1.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-1@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-1.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-1@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1.jpeg   1x,
+                        ./images/portfolio/portfolio-1@2.jpeg 2x
+                      "
+                    />
                     <img
-                    src="./images/portfolio/portfolio-mob-1.jpg"
-                    alt="ноутбук із прикладом сайту"
-                    width="450"/>
+                      src="./images/portfolio/portfolio-mob-1.jpg"
+                      alt="ноутбук із прикладом сайту"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer card__footer--stretched">
@@ -152,13 +252,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-2.jpeg 1x, ./images/portfolio/portfolio-mob-2@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-2.jpeg 1x, ./images/portfolio/portfolio-tab-2@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-2.jpeg 1x, ./images/portfolio/portfolio-2@2.jpeg 2x">
-                    <img src="./images/portfolio/portfolio-mob-2.jpg" alt="баскетбольна команда" width="450"/>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-2.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-2@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-2.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-2@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2.jpeg   1x,
+                        ./images/portfolio/portfolio-2@2.jpeg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-mob-2.jpg"
+                      alt="баскетбольна команда"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -172,13 +299,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-3.jpeg 1x, ./images/portfolio/portfolio-mob-3@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-3.jpeg 1x, ./images/portfolio/portfolio-tab-3@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-3.jpeg 1x, ./images/portfolio/portfolio-3@2.jpeg 2x">
-                    <img src="./images/portfolio/portfolio-mob-3.jpg" alt="постер ресторану" width="450"/>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-3.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-3@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-3.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-3@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3.jpeg   1x,
+                        ./images/portfolio/portfolio-3@2.jpeg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-mob-3.jpg"
+                      alt="постер ресторану"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -192,13 +346,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-4.jpeg 1x, ./images/portfolio/portfolio-mob-4@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-4.jpeg 1x, ./images/portfolio/portfolio-tab-4@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-4.jpeg 1x, ./images/portfolio/portfolio-4@2.jpeg 2x">
-                    <img src="./images/portfolio/portfolio-mob-4.jpg" alt="навушники" width="450"/>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-4.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-4@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-4.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-4@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4.jpeg   1x,
+                        ./images/portfolio/portfolio-4@2.jpeg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-mob-4.jpg"
+                      alt="навушники"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -212,16 +393,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-5.jpeg 1x, ./images/portfolio/portfolio-mob-5@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-5.jpeg 1x, ./images/portfolio/portfolio-tab-5@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-5.jpeg 1x, ./images/portfolio/portfolio-5@2.jpeg 2x">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-5.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-5@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-5.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-5@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5.jpeg   1x,
+                        ./images/portfolio/portfolio-5@2.jpeg 2x
+                      "
+                    />
                     <img
-                    src="./images/portfolio/portfolio-mob-5.jpg"
-                    alt="біла книга поруч з цеглею"
-                    width="450"/>
+                      src="./images/portfolio/portfolio-mob-5.jpg"
+                      alt="біла книга поруч з цеглею"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -235,16 +440,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-6.jpeg 1x, ./images/portfolio/portfolio-mob-6@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-6.jpeg 1x, ./images/portfolio/portfolio-tab-6@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-6.jpeg 1x, ./images/portfolio/portfolio-6@2.jpeg 2x">
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-6.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-6@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-6.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-6@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6.jpeg   1x,
+                        ./images/portfolio/portfolio-6@2.jpeg 2x
+                      "
+                    />
                     <img
-                    src="./images/portfolio/portfolio-mob-6.jpg"
-                    alt="відкрита карта на моніторі"
-                  width="450"/>
+                      src="./images/portfolio/portfolio-mob-6.jpg"
+                      alt="відкрита карта на моніторі"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -258,13 +487,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-7.jpeg 1x, ./images/portfolio/portfolio-mob-7@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-7.jpeg 1x, ./images/portfolio/portfolio-tab-7@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-7.jpeg 1x, ./images/portfolio/portfolio-7@2.jpeg 2x">
-                    <img src="./images/portfolio/portfolio-mob-7.jpg" alt="приклад журналу" width="450"/>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-7.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-7@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-7.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-7@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7.jpeg   1x,
+                        ./images/portfolio/portfolio-7@2.jpeg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-mob-7.jpg"
+                      alt="приклад журналу"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -278,13 +534,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-8.jpeg 1x, ./images/portfolio/portfolio-mob-8@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-8.jpeg 1x, ./images/portfolio/portfolio-tab-8@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-8.jpeg 1x, ./images/portfolio/portfolio-8@2.jpeg 2x">
-                    <img src="./images/portfolio/portfolio-mob-8.jpg" alt="бірка" width="450" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-8.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-8@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-8.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-8@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8.jpeg   1x,
+                        ./images/portfolio/portfolio-8@2.jpeg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-mob-8.jpg"
+                      alt="бірка"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -298,13 +581,40 @@
               <a class="card__link">
                 <div class="card__header">
                   <picture>
-                    <source media="(max-width:767px)" srcset="./images/portfolio/portfolio-mob-9.jpeg 1x, ./images/portfolio/portfolio-mob-9@2.jpeg 2x">
-                    <source media="(min-width:768px)" srcset="./images/portfolio/portfolio-tab-9.jpeg 1x, ./images/portfolio/portfolio-tab-9@2.jpeg 2x">
-                    <source media="(min-width:1200px)" srcset="./images/portfolio/portfolio-9.jpeg 1x, ./images/portfolio/portfolio-9@2.jpeg 2x">
-                    <img src="./images/portfolio/portfolio-mob-9.jpg" alt="робота за ноутбуком" width="450" />
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-mob-9.jpeg   1x,
+                        ./images/portfolio/portfolio-mob-9@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-tab-9.jpeg   1x,
+                        ./images/portfolio/portfolio-tab-9@2.jpeg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9.jpeg   1x,
+                        ./images/portfolio/portfolio-9@2.jpeg 2x
+                      "
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-mob-9.jpg"
+                      alt="робота за ноутбуком"
+                      width="450"
+                    />
                   </picture>
                   <div class="card__hover">
-                    <p class="card__hover-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    <p class="card__hover-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
                   </div>
                 </div>
                 <div class="card__footer">
@@ -317,13 +627,11 @@
         </div>
       </section>
     </main>
-    
+
     <!----------- FOOTER ----------->
     <footer class="page-footer">
       <div class="page-footer__wrap container">
-
         <div class="page-footer__tablet-head">
-          
           <div class="page-footer__logo-wrap">
             <a class="page-footer__logo logo" href="./index.html" lang="en"
               ><span class="logo__part">Web</span>Studio</a
@@ -340,12 +648,16 @@
                   >
                 </li>
                 <li class="address__item">
-                  <a class="address__contact link" href="mailto:info@devstudio.com"
+                  <a
+                    class="address__contact link"
+                    href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
                 <li class="address__item">
-                  <a class="address__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="address__contact link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
@@ -355,28 +667,44 @@
             <b class="join-us__heading">Приєднуйтесь</b>
             <ul class="socials">
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noopener noreffer nofollow">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noopener noreffer nofollow"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noopener noreffer nofollow">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noopener noreffer nofollow"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noopener noreffer nofollow">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noopener noreffer nofollow"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
-                <a href="" class="socials__link link" rel="noopener noreffer nofollow">
+                <a
+                  href=""
+                  class="socials__link link"
+                  rel="noopener noreffer nofollow"
+                >
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
@@ -388,7 +716,9 @@
 
         <div class="page-footer__form-wrap">
           <form class="page-footer__form">
-            <label class="page-footer__label" for="email">Підпишіться на розсилку</label>
+            <label class="page-footer__label" for="email"
+              >Підпишіться на розсилку</label
+            >
             <input
               class="page-footer__input"
               type="email"
@@ -396,13 +726,15 @@
               id="email"
               placeholder="E-mail"
             />
-            <button class="page-footer__button" type="submit">Підписатися</button>
+            <button class="page-footer__button" type="submit">
+              Підписатися
+            </button>
           </form>
         </div>
       </div>
     </footer>
 
-        <!-------- SCRIPT ----------->
-        <script src="./js/mobile-menu.js"></script>
+    <!-------- SCRIPT ----------->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
