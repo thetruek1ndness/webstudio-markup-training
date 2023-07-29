@@ -9,16 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -51,8 +48,7 @@
             <a
               class="page-header__contact-link link"
               href="mailto:info@devstudio.com"
-              lang="en"
-            >
+              lang="en">
               <svg class="page-header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com</a
@@ -71,8 +67,7 @@
         <button
           class="page-header__mobile-menu-open"
           type="button"
-          data-menu-open
-        >
+          data-menu-open>
           <svg class="mobile-menu-open" width="40" height="40">
             <use href="./images/icons.svg#mob-menu"></use>
           </svg>
@@ -101,7 +96,9 @@
                   >
                 </li>
                 <li class="mobile-menu__item">
-                  <a href="./contacts.html" class="mobile-menu__link link">Контакти</a>
+                  <a href="./contacts.html" class="mobile-menu__link link"
+                    >Контакти</a
+                  >
                 </li>
               </ul>
             </div>
@@ -171,54 +168,39 @@
 
           <!----------- PORTFOLIO - FILTER ----------->
           <div class="filter-wrap">
-            <ul class="filter">
-              <li
-                class="filter__item"
-                data-aos="fade-up"
-                data-aos-duration="400"
-                data-aos-delay="100"
-              >
-                <button class="filter__button--active button" type="button">
+            <ul class="filter js-filter">
+              <li class="filter__item">
+                <button
+                  class="filter__button filter__button--active button js-all-shown"
+                  type="button">
                   Усі
                 </button>
               </li>
-              <li
-                class="filter__item"
-                data-aos="fade-up"
-                data-aos-duration="400"
-                data-aos-delay="150"
-              >
-                <button class="filter__button button" type="button">
+              <li class="filter__item">
+                <button
+                  class="filter__button button js-websites-shown"
+                  type="button">
                   Веб-сайти
                 </button>
               </li>
-              <li
-                class="filter__item"
-                data-aos="fade-up"
-                data-aos-duration="400"
-                data-aos-delay="200"
-              >
-                <button class="filter__button button" type="button">
+              <li class="filter__item">
+                <button
+                  class="filter__button button js-applications-shown"
+                  type="button">
                   Додатки
                 </button>
               </li>
-              <li
-                class="filter__item"
-                data-aos="fade-up"
-                data-aos-duration="400"
-                data-aos-delay="250"
-              >
-                <button class="filter__button button" type="button">
+              <li class="filter__item">
+                <button
+                  class="filter__button button js-designs-shown"
+                  type="button">
                   Дизайн
                 </button>
               </li>
-              <li
-                class="filter__item"
-                data-aos="fade-up"
-                data-aos-duration="400"
-                data-aos-delay="300"
-              >
-                <button class="filter__button button" type="button">
+              <li class="filter__item">
+                <button
+                  class="filter__button button js-marketing-shown"
+                  type="button">
                   Маркетинг
                 </button>
               </li>
@@ -227,12 +209,7 @@
 
           <!----------- PORTFOLIO - WORKS ----------->
           <ul class="cards">
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="100"
-            >
+            <li class="card js-website">
               <a class="card__link card-link--stretched">
                 <div class="card__header">
                   <picture>
@@ -241,27 +218,23 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-1.jpeg   1x,
                         ./images/portfolio/portfolio-mob-1@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-1.jpeg   1x,
                         ./images/portfolio/portfolio-tab-1@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-1.jpeg   1x,
                         ./images/portfolio/portfolio-1@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-1.jpg"
                       alt="ноутбук із прикладом сайту"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
@@ -279,12 +252,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="150"
-            >
+            <li class="card js-design">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -293,34 +261,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-2.jpeg   1x,
                         ./images/portfolio/portfolio-mob-2@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-2.jpeg   1x,
                         ./images/portfolio/portfolio-tab-2@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-2.jpeg   1x,
                         ./images/portfolio/portfolio-2@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-2.jpg"
                       alt="баскетбольна команда"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Інтригуючий дизайн для постеру, який зіткнув атмосферу
+                      Нового Орлеану з чарівністю Золотої Зірки
                     </p>
                   </div>
                 </div>
@@ -331,12 +293,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="200"
-            >
+            <li class="card js-application">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -345,34 +302,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-3.jpeg   1x,
                         ./images/portfolio/portfolio-mob-3@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-3.jpeg   1x,
                         ./images/portfolio/portfolio-tab-3@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-3.jpeg   1x,
                         ./images/portfolio/portfolio-3@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-3.jpg"
                       alt="постер ресторану"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Смачний додаток для ресторану, який допоможе клієнтам
+                      насолоджуватись морепродуктами у стилі та з комфортом.
                     </p>
                   </div>
                 </div>
@@ -383,12 +334,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="200"
-            >
+            <li class="card js-marketing">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -397,34 +343,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-4.jpeg   1x,
                         ./images/portfolio/portfolio-mob-4@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-4.jpeg   1x,
                         ./images/portfolio/portfolio-tab-4@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-4.jpeg   1x,
                         ./images/portfolio/portfolio-4@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-4.jpg"
                       alt="навушники"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Стратегічний маркетинговий проєкт, що підніме ваш бізнес
+                      на вершину в конкурентному світі.
                     </p>
                   </div>
                 </div>
@@ -435,12 +375,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="250"
-            >
+            <li class="card js-application">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -449,34 +384,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-5.jpeg   1x,
                         ./images/portfolio/portfolio-mob-5@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-5.jpeg   1x,
                         ./images/portfolio/portfolio-tab-5@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-5.jpeg   1x,
                         ./images/portfolio/portfolio-5@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-5.jpg"
                       alt="біла книга поруч з цеглею"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Зручний додаток, що допоможе вам легко та організовано
+                      управляти своїми речами в коробках.
                     </p>
                   </div>
                 </div>
@@ -487,12 +416,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="300"
-            >
+            <li class="card js-website">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -501,34 +425,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-6.jpeg   1x,
                         ./images/portfolio/portfolio-mob-6@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-6.jpeg   1x,
                         ./images/portfolio/portfolio-tab-6@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-6.jpeg   1x,
                         ./images/portfolio/portfolio-6@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-6.jpg"
                       alt="відкрита карта на моніторі"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Унікальний веб-сайт, що надихає, зводячи межі та
+                      об'єднуючи творчі думки.
                     </p>
                   </div>
                 </div>
@@ -539,12 +457,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="300"
-            >
+            <li class="card js-design">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -553,34 +466,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-7.jpeg   1x,
                         ./images/portfolio/portfolio-mob-7@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-7.jpeg   1x,
                         ./images/portfolio/portfolio-tab-7@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-7.jpeg   1x,
                         ./images/portfolio/portfolio-7@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-7.jpg"
                       alt="приклад журналу"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ексклюзивний дизайн для обкладинки видання, створений з
+                      мінімалістичною елегантністю.
                     </p>
                   </div>
                 </div>
@@ -591,12 +498,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="350"
-            >
+            <li class="card js-marketing">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -605,34 +507,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-8.jpeg   1x,
                         ./images/portfolio/portfolio-mob-8@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-8.jpeg   1x,
                         ./images/portfolio/portfolio-tab-8@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-8.jpeg   1x,
                         ./images/portfolio/portfolio-8@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-8.jpg"
                       alt="бірка"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Динамічний маркетинговий проєкт, що випробовує та просуває
+                      ваш бізнес у лабораторії інновацій.
                     </p>
                   </div>
                 </div>
@@ -643,12 +539,7 @@
               </a>
             </li>
 
-            <li
-              class="card"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay="400"
-            >
+            <li class="card js-application">
               <a class="card__link">
                 <div class="card__header">
                   <picture>
@@ -657,34 +548,28 @@
                       srcset="
                         ./images/portfolio/portfolio-mob-9.jpeg   1x,
                         ./images/portfolio/portfolio-mob-9@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:768px)"
                       srcset="
                         ./images/portfolio/portfolio-tab-9.jpeg   1x,
                         ./images/portfolio/portfolio-tab-9@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <source
                       media="(min-width:1200px)"
                       srcset="
                         ./images/portfolio/portfolio-9.jpeg   1x,
                         ./images/portfolio/portfolio-9@2.jpeg 2x
-                      "
-                    />
+                      " />
                     <img
                       src="./images/portfolio/portfolio-mob-9.jpg"
                       alt="робота за ноутбуком"
-                      width="450"
-                    />
+                      width="450" />
                   </picture>
                   <div class="card__hover">
                     <p class="card__hover-text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Розвиваючийся додаток, який зросте разом з вашим бізнесом
+                      та оптимізує його розвиток.
                     </p>
                   </div>
                 </div>
@@ -741,8 +626,7 @@
                 <a
                   href=""
                   class="socials__link link"
-                  rel="noopener noreffer nofollow"
-                >
+                  rel="noopener noreffer nofollow">
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
@@ -752,8 +636,7 @@
                 <a
                   href=""
                   class="socials__link link"
-                  rel="noopener noreffer nofollow"
-                >
+                  rel="noopener noreffer nofollow">
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
@@ -763,8 +646,7 @@
                 <a
                   href=""
                   class="socials__link link"
-                  rel="noopener noreffer nofollow"
-                >
+                  rel="noopener noreffer nofollow">
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#facebook"></use>
                   </svg>
@@ -774,8 +656,7 @@
                 <a
                   href=""
                   class="socials__link link"
-                  rel="noopener noreffer nofollow"
-                >
+                  rel="noopener noreffer nofollow">
                   <svg class="socials__icon" width="20" height="20">
                     <use href="./images/icons.svg#linkedin"></use>
                   </svg>
@@ -795,8 +676,7 @@
               type="email"
               name="email"
               id="email"
-              placeholder="E-mail"
-            />
+              placeholder="E-mail" />
             <button class="page-footer__button" type="submit">
               Підписатися
             </button>
@@ -807,9 +687,6 @@
 
     <!-------- SCRIPT ----------->
     <script src="./js/mobile-menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
